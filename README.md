@@ -1,5 +1,11 @@
 ### Hi there I'm Jonviter 👋
 
 
-![<Badge Name>](https://img.shields.io/badge/<Badge Text>-<Background Color>?style=for-the-badge&logo=<Icon Name>&logoColor=<Logo Color>)
+```
+export interface ProfileParams {
+  name: string;
+  email: string;
+  job: string;
+}
 
+```
