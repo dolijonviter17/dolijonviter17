@@ -7,23 +7,35 @@
 import React from 'react';
 import {ProfileView} from './Component/ProfileView'
 
-export interface ProfileParams {
-  name: string;
-  email: string;
-  job: string;
-  experience : string;
+const myDailyRoutine = () : string => {
+  return "Coding, Sleep and Reading"  
+}
+
+const mySkils = () : string => {
+  return "Javascript, Typescript, HTML, CSS"  
 }
 
 
-const About : React.FC<ProfileParams> = ({name, email, job, experience}) => {
+export const AboutMe  = () => {
 
     return (
+        <>
         <ProfileView 
             name="Jonviter Simbolon"
             email="dolijonviter17@gmail.com"
             job="Mobile Devepoper"
             experience="3 years"
         />
+        <MyDailyRoutineView
+            title="My Daily Routine"
+            content={myDailyRoutine()}
+        />
+        <MySkillsView
+            title="Skills"
+            content={mySkils()}
+        />
+        
+        </>
     )
 
 }
