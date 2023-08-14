@@ -2,6 +2,11 @@
 
 
 ```tsx
+
+
+import React from 'react';
+import {ProfileView} from './Component/ProfileView'
+
 export interface ProfileParams {
   name: string;
   email: string;
