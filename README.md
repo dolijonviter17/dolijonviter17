@@ -5,7 +5,7 @@
 
 
 import React from 'react';
-import {ProfileView} from './Component/ProfileView'
+import {ProfileView, MyDailyRoutineView, MySkillsView} from './Component/ProfileView'
 
 const myDailyRoutine = () : string => {
   return "Coding, Sleep and Reading"  
