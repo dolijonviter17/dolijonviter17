@@ -1,26 +1,2 @@
-# dolijonviter
-About Me
+![<Badge Name>](https://img.shields.io/badge/<Badge Text>-<Background Color>?style=for-the-badge&logo=<Icon Name>&logoColor=<Logo Color>)
 
-
-export interface Command<Params = any> {
-    execute(params? : Params) : Promise<void>
-    canExecute(params? : Params) : boolean
-}
-
-
-export const CommandInvoker = <Params = any>(
-    command : Command<Params>,
-    params? : Params
-) => {
-    return () => {
-        if (command.canExecute(params)) {
-            command.execute(params)
-        }
-    }
-
-}
-
-export const useCommand = <T extends Command>(command : () => T) => {
-    const store = localStore(() => observable.box(command()))
-    return store.get();
-}
