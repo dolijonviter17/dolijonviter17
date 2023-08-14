@@ -1,7 +1,7 @@
 ### Hi there I'm Jonviter 👋
 
 
-```
+```tsx
 export interface ProfileParams {
   name: string;
   email: string;
