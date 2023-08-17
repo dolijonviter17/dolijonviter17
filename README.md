@@ -8,7 +8,7 @@ import React from 'react';
 import {ProfileView, MyDailyRoutineView, MySkillsView} from './Component/ProfileView'
 
 const myDailyRoutine = () : string => {
-  return "Coding, Sleep and Reading"  
+  return "Coding, Sleep and Repeat"  
 }
 
 const mySkils = () : string => {
