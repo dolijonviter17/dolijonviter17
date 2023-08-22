@@ -15,6 +15,10 @@ const mySkils = () : string => {
   return "Javascript, Typescript, HTML, CSS"  
 }
 
+const myPortfolio = () : string => {
+  return "please see the repository pinned below"  
+}
+
 
 export const AboutMe  = () => {
 
