@@ -5,7 +5,7 @@
 
 
 import React from 'react';
-import {ProfileView, MyDailyRoutineView, MySkillsView} from './Component/ProfileView'
+import {ProfileView, MyDailyRoutineView, MySkillsView, MyPortfolioView} from './Component/ProfileView'
 
 const myDailyRoutine = () : string => {
   return "Coding, Sleep and Repeat"  
@@ -38,7 +38,10 @@ export const AboutMe  = () => {
             title="Skills"
             content={mySkils()}
         />
-        
+        <MyPortfolioView
+            title="Skills"
+            content={myPortfolio()}
+        />
         </>
     )
 
