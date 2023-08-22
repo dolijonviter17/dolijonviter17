@@ -39,7 +39,7 @@ export const AboutMe  = () => {
             content={mySkils()}
         />
         <MyPortfolioView
-            title="Skills"
+            title="Portfolio"
             content={myPortfolio()}
         />
         </>
